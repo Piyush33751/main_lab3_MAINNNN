@@ -5,12 +5,16 @@ quantity_list= {'apple': 5, 'orange':5, 'watermelon': 1, 'pineapple': 2, 'pear' 
 
 
 def total_cost_shopping():
+    my_list=[]
     total_cost = 0
     for key in price_list.keys():
-        if key in quantity_list:
-            # complete the implementation below:
-
-    print("total cost = ", total_cost)
+        total_cost = price_list[key] * quantity_list[key]
+        print("Therfore the cost is =" + str(total_cost))
+        my_list.append(total_cost)#for extra practise to understand how to sum is up using a list
+    x=sum(my_list)
+    print("Therfore the total cost is =" + str(x)) 
+    return x   
+    
 
 
 def cost_of_fruits(fruit, quantity):
@@ -23,9 +27,9 @@ def cost_of_fruits(fruit, quantity):
 
 
 def main():
-
     cost_of_fruits('apple', 10)
-    total_cost_shopping()
+    print(total_cost_shopping())
+
 
 
 if __name__ == "__main__":
