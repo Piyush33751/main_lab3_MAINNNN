@@ -9,4 +9,7 @@ def test_total_cost_shopping():
  assert(x==y)
     
 
-#def test_cost_of_fruit(x,y):
+def test_cost_of_fruit():
+ x=6.50*10
+ y=pi_test.cost_of_fruits('watermelon',10)
+ assert(x==y)
